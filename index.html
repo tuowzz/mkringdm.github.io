@@ -22,6 +22,15 @@
     src="https://www.facebook.com/tr?id=127978927946856&ev=PageView&noscript=1"
   /></noscript>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16455237731"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16455237731');
+  </script>
+
   <style>
     body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
     .hero { text-align: center; padding: 2rem 1rem; background: #fefefe; }
@@ -45,7 +54,10 @@
     <p>คัดสรรเพชรแท้ ดีไซน์หรูเฉพาะคู่คุณ พร้อมบริการสลักชื่อ ส่งฟรีทั่วไทย</p>
     <div class="brand">Mongkolsiri Diamond</div>
     <div class="top-cta">
-      <a href="https://lin.ee/ZRrK7cl" target="_blank" onclick="fbq('track', 'Lead');">💬 ทัก LINE เลย</a>
+      <a href="https://lin.ee/ZRrK7cl" target="_blank"
+         onclick="fbq('track', 'Lead'); gtag('event', 'conversion', {'send_to': 'AW-16455237731'})">
+         💬 ทัก LINE เลย
+      </a>
     </div>
   </div>
 
@@ -74,7 +86,7 @@
 
   <div class="cta">
     <a href="https://lin.ee/ZRrK7cl" target="_blank"
-       onclick="fbq('track', 'Lead');">
+       onclick="fbq('track', 'Lead'); gtag('event', 'conversion', {'send_to': 'AW-16455237731'})">
        💬 สอบถามผ่าน LINE
     </a>
     <a href="https://maps.app.goo.gl/Gy1417mtFmiCC1ud9" target="_blank"
