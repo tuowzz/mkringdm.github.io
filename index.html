@@ -22,7 +22,7 @@
     src="https://www.facebook.com/tr?id=127978927946856&ev=PageView&noscript=1"
   /></noscript>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Ads Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16455237731"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -55,7 +55,7 @@
     <div class="brand">Mongkolsiri Diamond</div>
     <div class="top-cta">
       <a href="https://lin.ee/ZRrK7cl" target="_blank"
-         onclick="fbq('track', 'Lead'); gtag('event', 'conversion', {'send_to': 'AW-16455237731'})">
+         onclick="return gtag_report_conversion('https://lin.ee/ZRrK7cl'); fbq('track', 'Lead');">
          💬 ทัก LINE เลย
       </a>
     </div>
@@ -86,7 +86,7 @@
 
   <div class="cta">
     <a href="https://lin.ee/ZRrK7cl" target="_blank"
-       onclick="fbq('track', 'Lead'); gtag('event', 'conversion', {'send_to': 'AW-16455237731'})">
+       onclick="return gtag_report_conversion('https://lin.ee/ZRrK7cl'); fbq('track', 'Lead');">
        💬 สอบถามผ่าน LINE
     </a>
     <a href="https://maps.app.goo.gl/Gy1417mtFmiCC1ud9" target="_blank"
@@ -98,5 +98,23 @@
   <footer>
     &copy; 2025 Mongkolsiri Diamond | <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
   </footer>
+
+  <!-- Google Conversion Callback Function -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16455237731/JD3kCJrKoc8aEOOAvKY9',
+          'value': 1.0,
+          'currency': 'THB',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </body>
 </html>
