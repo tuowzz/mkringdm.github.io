@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>แหวนแต่งงาน | Mongkolsiri Diamond</title>
 
   <!-- Facebook Pixel -->
@@ -32,186 +32,288 @@
   </script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
 
   <style>
-    body { 
-      font-family: 'Merriweather', serif; 
-      margin: 0; padding: 0; 
-      background: #f9f7f4; 
-      color: #333; 
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
     }
-    .hero { 
-      text-align: center; 
-      padding: 3rem 1rem; 
-      background: #fff; 
-      border-bottom: 1px solid #eee; 
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Merriweather', serif;
+      background: #f9f7f4;
+      color: #2b2b2b;
+      line-height: 1.6;
     }
-    .hero h1 { 
-      font-family: 'Playfair Display', serif; 
-      font-size: 2.5rem; 
-      color: #111; 
-      margin-bottom: 1rem; 
+    a {
+      color: #b68e2f;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
-    .hero p { 
-      font-size: 1.2rem; 
-      color: #555; 
-      margin-top: 0.5rem; 
+    a:hover {
+      color: #876a1b;
+      text-decoration: underline;
     }
-    .brand { 
-      font-weight: bold; 
-      font-size: 1.3rem; 
-      margin: 1.5rem 0; 
-      color: #222; 
-      letter-spacing: 0.5px;
+    img {
+      max-width: 100%;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.07);
     }
-    .hero .top-cta a { 
-      display: inline-block; 
-      background: #25D366; 
-      color: #fff; 
-      padding: 0.8rem 1.8rem; 
-      border-radius: 50px; 
-      text-decoration: none; 
-      font-size: 1.1rem; 
-      margin-top: 1.5rem; 
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    .hero .top-cta a:hover {
-      background: #1ebc5e;
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 4rem;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 10;
     }
-    .video { 
-      text-align: center; 
-      padding: 2.5rem 1rem; 
-      background: #fff; 
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #1c1c1c;
+      margin-bottom: 1rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .gallery { 
-      display: flex; 
-      flex-direction: column; 
-      align-items: center; 
-      gap: 2.5rem; 
-      padding: 3rem 1rem; 
+    .hero p {
+      font-size: 1.3rem;
+      color: #555;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .gallery img { 
-      width: 100%; 
-      max-width: 800px; 
-      border-radius: 16px; 
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1); 
+    .brand {
+      font-weight: 700;
+      font-size: 1.4rem;
+      letter-spacing: 0.1em;
+      color: #b68e2f;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      font-family: 'Playfair Display', serif;
+    }
+    .top-cta a {
+      background: #b68e2f;
+      color: #fff;
+      padding: 1rem 2.8rem;
+      border-radius: 50px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      box-shadow: 0 6px 15px rgb(182 142 47 / 0.4);
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .top-cta a:hover {
+      background: #876a1b;
+    }
+
+    /* Video Section */
+    .video {
+      background: #fff;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: center;
+    }
+    .video video {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgb(0 0 0 / 0.1);
+    }
+
+    /* Gallery */
+    .gallery {
+      background: #fff;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem 3rem;
+      max-width: 1200px;
+      margin: 0 auto 3rem;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.05);
       border: 1px solid #eaeaea;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
     }
-    .gallery p { 
-      font-size: 1.15rem; 
-      color: #444; 
-      text-align: center; 
-      margin-top: -1rem; 
+    .gallery-item img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 30px rgb(0 0 0 / 0.15);
+    }
+    .gallery-item p {
+      font-size: 1rem;
       font-style: italic;
+      color: #555;
+      max-width: 280px;
+      margin: 0 auto;
+      user-select: none;
     }
-    .details { 
-      padding: 3rem 1rem; 
-      background: #fafafa; 
-      text-align: center; 
-      border-top: 1px solid #eee; 
+
+    /* Details */
+    .details {
+      background: #fcf9f3;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+      padding: 3rem 2rem;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgb(182 142 47 / 0.15);
+      text-align: center;
+      font-size: 1.25rem;
+      color: #444;
+      line-height: 1.7;
+      font-weight: 500;
     }
-    .details p { 
-      font-size: 1.2rem; 
-      line-height: 1.8; 
-      color: #333;
+    .details p {
+      margin: 0;
     }
-    .cta { 
-      text-align: center; 
-      padding: 3rem 1rem; 
+
+    /* CTA buttons */
+    .cta {
+      text-align: center;
+      margin-bottom: 4rem;
     }
-    .cta a { 
-      display: inline-block; 
-      background: #000; 
-      color: #fff; 
-      padding: 0.8rem 2rem; 
-      text-decoration: none; 
-      border-radius: 50px; 
-      margin: 0.5rem; 
-      font-size: 1.15rem; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    .cta a {
+      background: transparent;
+      color: #b68e2f;
+      border: 2.5px solid #b68e2f;
+      padding: 0.9rem 3.2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 0 1rem;
       transition: all 0.3s ease;
+      display: inline-block;
+      cursor: pointer;
+      min-width: 170px;
     }
     .cta a:hover {
-      background: #222;
+      background: #b68e2f;
+      color: white;
+      box-shadow: 0 8px 20px rgb(182 142 47 / 0.7);
     }
-    footer { 
-      text-align: center; 
-      padding: 2rem; 
-      font-size: 0.9rem; 
-      color: #999; 
-      background: #f3f3f3; 
-      border-top: 1px solid #e0e0e0; 
+
+    /* Footer */
+    footer {
+      background: #f3f3f3;
+      color: #888;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      border-top: 1px solid #ddd;
+      font-weight: 400;
+    }
+    footer a {
+      color: #b68e2f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .details {
+        font-size: 1.1rem;
+        padding: 2rem 1.2rem;
+      }
+      .cta a {
+        font-size: 1rem;
+        padding: 0.8rem 2.5rem;
+        min-width: auto;
+        margin: 0.5rem 0.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="hero">
+  <section class="hero container">
     <h1>เพชรแท้ ความรักแท้<br>แหวนคู่ที่ใช่... เพื่อวันที่สำคัญที่สุดในชีวิต</h1>
     <p>คัดสรรเพชรแท้ ดีไซน์หรูเฉพาะคู่คุณ พร้อมบริการสลักชื่อ ส่งฟรีทั่วไทย</p>
     <div class="brand">Mongkolsiri Diamond</div>
     <div class="top-cta">
-      <a href="https://lin.ee/ZRrK7cl" target="_blank"
+      <a href="https://lin.ee/ZRrK7cl" target="_blank" 
          onclick="return gtag_report_conversion('https://lin.ee/ZRrK7cl'); fbq('track', 'Lead');">
          💬 ทัก LINE เลย
       </a>
     </div>
-  </div>
+  </section>
 
-<!-- วิดีโอโปรโมต -->
-<div class="video">
-  <video width="100%" autoplay muted playsinline loop controls>
-    <source src="SaveTik.co_7421006142152756488.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+  <section class="video container">
+    <video autoplay muted playsinline loop controls>
+      <source src="SaveTik.co_7421006142152756488.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
+  <section class="gallery container">
+    <div class="gallery-item">
+      <img src="ring_image_1.jpeg" alt="ดีไซน์แหวนแต่งงานหรูหรา" />
+      <p>💎 ดีไซน์หรู ดูคลาสสิก เหมาะกับทุกคู่รัก ที่ต้องการความลงตัวในทุกมุมมอง</p>
+    </div>
+    <div class="gallery-item">
+      <img src="ring_image_2.jpeg" alt="เพชรแท้คัดเกรด" />
+      <p>✨ เพชรแท้คัดเกรดคุณภาพสูง สะท้อนแสงวิบวับได้ทุกมุมมอง</p>
+    </div>
+    <div class="gallery-item">
+      <img src="ring_image_3.jpeg" alt="แหวนใส่สบายทุกวัน" />
+      <p>💍 สวมใส่ง่าย ใส่ได้ทุกวัน ไม่บาดนิ้ว ด้วยการออกแบบตามหลักสรีรศาสตร์</p>
+    </div>
+    <div class="gallery-item">
+      <img src="ring_image_4.jpeg" alt="กล่องของขวัญพรีเมียม" />
+      <p>🎁 พร้อมกล่องของขวัญพรีเมียม หรูหราสมเกียรติในวันสำคัญของคุณ</p>
+    </div>
+  </section>
 
-  <!-- แกลเลอรีรูป -->
-  <div class="gallery">
-    <img src="ring_image_1.jpeg" alt="แหวนแต่งงาน">
-    <p>💎 ดีไซน์หรู ดูคลาสสิก เหมาะกับทุกคู่รัก</p>
-
-    <img src="ring_image_2.jpeg" alt="แหวนแต่งงาน">
-    <p>✨ เพชรแท้คัดเกรด สะท้อนแสงทุกมุมมอง</p>
-
-    <img src="ring_image_3.jpeg" alt="แหวนแต่งงาน">
-    <p>💍 สวมใส่ง่าย ใส่ได้ทุกวัน ไม่บาดนิ้ว</p>
-
-    <img src="ring_image_4.jpeg" alt="แหวนแต่งงาน">
-    <p>🎁 พร้อมกล่องของขวัญพรีเมียม สำหรับวันสำคัญ</p>
-  </div>
-
-  <div class="details">
+  <section class="details container">
     <p>
-      💍 งานฝีมือปราณีตจากช่างผู้เชี่ยวชาญ<br>
-      ✨ พร้อมกล่องกำมะหยี่หรูหรา<br>
-      🧡 บริการสลักชื่อ/วันที่สำคัญฟรี<br>
-      📦 จัดส่งฟรีทั่วประเทศ
+      💍 งานฝีมือปราณีตจากช่างผู้เชี่ยวชาญ<br />
+      ✨ พร้อมกล่องกำมะหยี่หรูหรา ดีไซน์เฉพาะ<br />
+      🧡 บริการสลักชื่อและวันที่สำคัญฟรี<br />
+      📦 จัดส่งฟรีทั่วประเทศ พร้อมการรับประกันคุณภาพ
     </p>
-  </div>
+  </section>
 
-  <div class="cta">
-    <a href="https://lin.ee/ZRrK7cl" target="_blank"
+  <section class="cta container">
+    <a href="https://lin.ee/ZRrK7cl" target="_blank" 
        onclick="return gtag_report_conversion('https://lin.ee/ZRrK7cl'); fbq('track', 'Lead');">
        💬 สอบถามผ่าน LINE
     </a>
-    <a href="https://maps.app.goo.gl/Gy1417mtFmiCC1ud9" target="_blank"
+    <a href="https://maps.app.goo.gl/Gy1417mtFmiCC1ud9" target="_blank" 
        onclick="fbq('track', 'ViewLocation');">
        📍 ดูแผนที่หน้าร้าน
     </a>
-  </div>
+  </section>
 
   <footer>
     &copy; 2025 Mongkolsiri Diamond | <a href="privacy-policy.html">นโยบายความเป็นส่วนตัว</a>
   </footer>
 
-  <!-- Google Conversion Callback Function -->
   <script>
     function gtag_report_conversion(url) {
       var callback = function () {
-        if (typeof(url) != 'undefined') {
+        if (typeof url !== 'undefined') {
           window.location = url;
         }
       };
