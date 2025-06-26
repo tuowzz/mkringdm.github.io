@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tuowzz.github.io/mkringdm.github.io/sitemap.xml
