@@ -86,11 +86,40 @@
     .top-cta a:hover { background: #876a1b;}
     .video { background: #fff; padding: 3rem 0; display: flex; justify-content: center;}
     .video video { width: 100%; max-width: 900px; border-radius: 14px; box-shadow: 0 10px 30px rgb(0 0 0 / 0.1);}
-    .gallery { background: #fff; padding: 4rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem 3rem; max-width: 1200px; margin: 0 auto 3rem;}
-    .gallery-item { text-align: center;}
-    .gallery-item img { border-radius: 14px; box-shadow: 0 10px 20px rgb(0 0 0 / 0.05); border: 1px solid #eaeaea; margin-bottom: 1rem; transition: transform 0.3s ease; cursor: pointer;}
-    .gallery-item img:hover { transform: scale(1.03); box-shadow: 0 15px 30px rgb(0 0 0 / 0.15);}
-    .gallery-item p { font-size: 1rem; font-style: italic; color: #555; max-width: 280px; margin: 0 auto; user-select: none;}
+    /* --- Gallery: 1 column, always vertical --- */
+    .gallery {
+      background: #fff;
+      padding: 2.7rem 0 1.2rem 0;
+      max-width: 420px;
+      margin: 0 auto 2.2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery-item img {
+      width: 100%;
+      max-width: 370px;
+      margin: 0 auto 0.8em auto;
+      border-radius: 13px;
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.08);
+      border: 1px solid #eaeaea;
+      display: block;
+    }
+    .gallery-item p {
+      font-size: 1.04rem;
+      font-style: italic;
+      color: #555;
+      margin: 0;
+      padding-bottom: 0.2em;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    /* ---- /Gallery ---- */
     .details { background: #fcf9f3; max-width: 800px; margin: 0 auto 3rem; padding: 3rem 2rem; border-radius: 14px; box-shadow: 0 5px 15px rgb(182 142 47 / 0.15); text-align: center; font-size: 1.17rem; color: #444; line-height: 1.7; font-weight: 500;}
     .details p { margin: 0;}
     .cta { text-align: center; margin-bottom: 3.2rem;}
@@ -141,6 +170,7 @@
       Your browser does not support the video tag.
     </video>
   </section>
+  <!-- GALLERY: แนวตั้ง -->
   <section class="gallery container">
     <div class="gallery-item">
       <img src="ring_image_1.jpeg" alt="แหวนเพชรแท้ GIA ดีไซน์หรูหรา" />
