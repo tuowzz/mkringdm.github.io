@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="เลือกแหวนเพชรแต่งงานและเพชรแท้ GIA ดีไซน์หรู มีใบรับรอง ส่งฟรีทั่วไทย Mongkolsiri Diamond">
   <meta name="twitter:image" content="https://tuowzz.github.io/mbshopz.github.io/ring_image_1.jpeg">
 
-  <!-- Structured Data Product & Local Business -->
+  <!-- Structured Data Product -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -70,6 +70,7 @@
   }
   </script>
 
+  <!-- Structured Data Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -95,7 +96,7 @@
   <!-- Favicon -->
   <link rel="icon" href="https://tuowzz.github.io/mbshopz.github.io/ring_image_1.jpeg" type="image/jpeg" />
 
-  <!-- 🔹 Facebook Pixel (ID จริง) -->
+  <!-- 🔹 Facebook Pixel -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -113,7 +114,7 @@
       src="https://www.facebook.com/tr?id=127978927946856&ev=PageView&noscript=1"/>
   </noscript>
 
-  <!-- 🔹 TikTok Pixel (ID จริง) -->
+  <!-- 🔹 TikTok Pixel -->
   <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject = t;
@@ -121,18 +122,18 @@
       ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
       ttq.setAndDefer = function(t, e) {
         t[e] = function() {
-          t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+          t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
         }
       };
       for (var i = 0; i < ttq.methods.length; i++) {
-        ttq.setAndDefer(ttq, ttq.methods[i])
+        ttq.setAndDefer(ttq, ttq.methods[i]);
       }
       ttq.instance = function(t) {
         var e = ttq._i[t] || [];
         for (var n = 0; n < ttq.methods.length; n++) {
-          ttq.setAndDefer(e, ttq.methods[n])
+          ttq.setAndDefer(e, ttq.methods[n]);
         }
-        return e
+        return e;
       };
       ttq.load = function(e, n) {
         var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
@@ -140,7 +141,7 @@
         ttq._i[e] = [];
         ttq._i[e]._u = i;
         ttq._t = ttq._t || {};
-        ttq._t[e] = +new Date;
+        ttq._t[e] = +new Date();
         ttq._o = ttq._o || {};
         ttq._o[e] = n || {};
         var o = document.createElement("script");
@@ -148,7 +149,7 @@
         o.async = !0;
         o.src = i + "?sdkid=" + e + "&lib=" + t;
         var a = document.getElementsByTagName("script")[0];
-        a.parentNode.insertBefore(o, a)
+        a.parentNode.insertBefore(o, a);
       };
 
       ttq.load('D0EVS2JC77U9C23772EG');
@@ -156,13 +157,13 @@
     }(window, document, 'ttq');
   </script>
 
-  <!-- 🔹 Google Ads gtag (กรอก AW- และ LABEL ทีหลัง) -->
+  <!-- 🔹 Google Ads gtag (ใส่ AW- จริงทีหลัง) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'AW-XXXXXXXXX'); // TODO: ใส่ Conversion ID จริง
+    gtag('config', 'AW-XXXXXXXXX'); // TODO: ใส้ Conversion ID จริง
   </script>
 
   <style>
@@ -300,10 +301,7 @@
       background: rgba(255,255,255,0.7);
     }
 
-    /* Sections */
-    .section {
-      padding: 22px 0;
-    }
+    .section { padding: 22px 0; }
     .section-card {
       background: var(--card);
       border-radius: var(--radius-xl);
@@ -323,10 +321,8 @@
       margin-bottom: 18px;
     }
 
-    /* Video hero (บนสุด) */
-    .video-hero {
-      padding: 20px 0 10px;
-    }
+    /* Video hero */
+    .video-hero { padding: 20px 0 10px; }
     .video-hero-card {
       background: radial-gradient(circle at top, #fef9f1 0, #f2e5d3 60%, #ebdfd0 100%);
       border-radius: var(--radius-xl);
@@ -364,9 +360,7 @@
     }
 
     /* Hero info block */
-    .hero-info {
-      padding: 10px 0 10px;
-    }
+    .hero-info { padding: 10px 0 10px; }
     .hero-info-inner {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -552,17 +546,13 @@
       margin: 0 0 8px;
       font-size: 0.9rem;
     }
-    .blog-list li {
-      margin-bottom: 8px;
-    }
+    .blog-list li { margin-bottom: 8px; }
     .blog-list a {
       text-decoration: underline;
       text-underline-offset: 0.15em;
       color: #3b3228;
     }
-    .blog-list a:hover {
-      color: var(--gold-deep);
-    }
+    .blog-list a:hover { color: var(--gold-deep); }
 
     /* FAQ & Reviews */
     .faq-grid {
@@ -605,7 +595,6 @@
       font-size: 0.83rem;
     }
 
-    /* Footer */
     footer {
       border-top: 1px solid rgba(0,0,0,0.06);
       padding: 18px 0 22px;
@@ -618,11 +607,8 @@
       color: #61533f;
       font-weight: 500;
     }
-    footer a:hover {
-      color: var(--gold-deep);
-    }
+    footer a:hover { color: var(--gold-deep); }
 
-    /* Floating LINE button (mobile) */
     .floating-line {
       position: fixed;
       right: 16px;
@@ -636,17 +622,10 @@
       padding-inline: 1.4rem;
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
-      .hero-info-inner {
-        grid-template-columns: minmax(0,1fr);
-      }
-      .offer-grid, .faq-grid {
-        grid-template-columns: minmax(0,1fr);
-      }
-      .gallery-grid {
-        grid-template-columns: repeat(2, minmax(0,1fr));
-      }
+      .hero-info-inner { grid-template-columns: minmax(0,1fr); }
+      .offer-grid, .faq-grid { grid-template-columns: minmax(0,1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
     }
     @media (max-width: 640px) {
       .top-bar {
@@ -657,21 +636,11 @@
         width: 100%;
         justify-content: space-between;
       }
-      .hero-title {
-        font-size: 1.45rem;
-      }
-      .gallery-grid {
-        grid-template-columns: minmax(0,1fr);
-      }
-      .section-card {
-        padding: 18px 16px;
-      }
-      .floating-line {
-        display: block;
-      }
-      .btn-outline {
-        padding-inline: 0.9rem;
-      }
+      .hero-title { font-size: 1.45rem; }
+      .gallery-grid { grid-template-columns: minmax(0,1fr); }
+      .section-card { padding: 18px 16px; }
+      .floating-line { display: block; }
+      .btn-outline { padding-inline: 0.9rem; }
     }
   </style>
 </head>
@@ -797,7 +766,7 @@
       </div>
     </section>
 
-    <!-- GALLERY รูปแหวน + บิ้วใต้ภาพ -->
+    <!-- GALLERY -->
     <section class="gallery-section" id="gallery">
       <div class="shell">
         <div class="section-card">
@@ -1032,11 +1001,11 @@
       // TODO: แก้ send_to ให้เป็น Conversion ID + Label จริงของแคมเปญแชทไลน์
       if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
-          'send_to': 'AW-XXXXXXXXX/CONVERSION_LABEL_LINE',
-          'event_category': 'engagement',
-          'event_label': 'line_contact',
-          'value": 0,
-          "currency": "THB"
+          send_to: 'AW-XXXXXXXXX/CONVERSION_LABEL_LINE',
+          event_category: 'engagement',
+          event_label: 'line_contact',
+          value: 0,
+          currency: 'THB'
         });
       }
     }
@@ -1049,7 +1018,6 @@
 
       // TikTok Event – เข้ากลุ่ม OpenChat
       if (typeof ttq !== 'undefined' && typeof ttq.track === 'function') {
-        // จะใช้ชื่อ event ว่า OpenChat_Join หรือ CompleteRegistration ก็ได้ แล้วแต่คุณเซ็ตฝั่ง TikTok
         ttq.track('OpenChat_Join');
       }
 
@@ -1057,11 +1025,11 @@
       // TODO: ใส่เป็น conversion แยกอีกตัว เช่น Join_OpenChat
       if (typeof gtag === 'function') {
         gtag('event', 'conversion', {
-          'send_to': 'AW-XXXXXXXXX/CONVERSION_LABEL_OPENCHAT',
-          'event_category': 'engagement',
-          'event_label': 'openchat_join',
-          'value': 0,
-          'currency': 'THB'
+          send_to: 'AW-XXXXXXXXX/CONVERSION_LABEL_OPENCHAT',
+          event_category: 'engagement',
+          event_label: 'openchat_join',
+          value: 0,
+          currency: 'THB'
         });
       }
     }
