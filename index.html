@@ -805,7 +805,7 @@
       </div>
     </section>
 
-    <!-- CUSTOMER REVIEW VIDEO SECTION -->
+  <!-- CUSTOMER REVIEW VIDEO SECTION (AUTOPLAY VERSION) -->
 <section class="section">
   <div class="shell">
     <div class="section-card">
@@ -815,7 +815,18 @@
       </div>
 
       <div class="video-wrapper" style="margin-bottom: 16px;">
-        <video controls playsinline style="border-radius: 16px; width: 100%;">
+        <video 
+          autoplay 
+          muted 
+          playsinline 
+          loop
+          style="
+            border-radius: 16px; 
+            width: 100%;
+            object-fit: cover;
+            max-height: 450px;
+          "
+        >
           <source src="SaveTik.co_7534575569921510663.mp4" type="video/mp4">
           เบราว์เซอร์ของคุณไม่รองรับวิดีโอ
         </video>
